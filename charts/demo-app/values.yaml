@@ -1,0 +1,23 @@
+# عدد النسخ من البرنامج اللي بتشتغل في نفس الوقت
+replicaCount: 2
+
+# معلومات الصورة Docker
+image:
+  repository: nginx
+  tag: "1.21"
+  pullPolicy: IfNotPresent
+
+# معلومات الـ Service (الطريقة اللي تدخل بيها على البرنامج)
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+# حدود الموارد
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi

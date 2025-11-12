@@ -1,0 +1,6 @@
+*.log
+kubeconfig*
+secrets/
+*.swp
+.idea/
+.vscode/
