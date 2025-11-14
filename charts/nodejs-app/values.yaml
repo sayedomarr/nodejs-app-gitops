@@ -1,8 +1,8 @@
 replicaCount: 2
 
 image:
-  repository: node
-  tag: "18-alpine"
+  repository: nginx
+  tag: "1.21"
   pullPolicy: IfNotPresent
 
 service:
